@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-white">
+                <div class="card-body">
+                    <form action="javascript:void(0);">
+                        <input type="text" class="form-control add-task" id="task" placeholder="New Task...">
+                    </form>
+                    <ul class="nav nav-pills todo-nav">
+                        <li role="presentation" class="nav-item all-task active"><a href="#" class="nav-link">All</a></li>
+                        <li role="presentation" class="nav-item active-task"><a href="#" class="nav-link">Active</a></li>
+                        <li role="presentation" class="nav-item completed-task"><a href="#" class="nav-link">Completed</a></li>
+                    </ul>
+                    <table id="myTable">
+                        <tr>
+                          <td >Task</td>
+                          <td></td>
+                        
+                        </tr>
+                        <tbody class="row-container"></tbody>
+                    </table>
+
+                      <br>
+                      
+                      <button onclick="onAddTask()">Create row</button>
+                      <!-- <button onclick="myDeleteFunction()">Delete row</button> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="logic.js"></script>
+</body>
+</html>
